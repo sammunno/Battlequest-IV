@@ -41,7 +41,7 @@ public class Enemy {
         myDefense = defense;
     }
     
-    public int getDefense(){
+    public double getDefense(){
         return mydefense;
     }
      public void setLevel(int level){
