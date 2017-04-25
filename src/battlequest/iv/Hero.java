@@ -62,6 +62,12 @@ public class Hero {
     }
     
    public void attack(Enemy enemy){
+      int oldHp = enemy.getHp();
+      int L = myLevel;
+      int P = myAttack;
+      int A = enemy.getDefense();
+      int attackPower = ((((((2*L)/5)+2)*P)/50)*A);
+      enemy.setHp(oldHP - attackPower);
        
    }
    
