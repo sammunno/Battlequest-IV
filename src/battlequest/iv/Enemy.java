@@ -53,6 +53,9 @@ public class Enemy {
     }
     
    public void attack(Hero hero){
+       double newVal = hero.getHp() - ((2 * myLevel / 5 + 2) * myAttack) * hero.getDefense() / 50);
+       if( newVal < 0 ) hero.setHp(0);
+       else hero.setHp(newVal);
        
    }
    public int calcGoldDropped(){
