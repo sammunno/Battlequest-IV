@@ -43,7 +43,10 @@ public class BattlequestIVTest {
     
     @Test
     public void EnemyAttackTest(){
-        
+        Hero mew = new Hero(250,300,30,50,5000);
+        Enemy mewTwo = new Enemy(275,250,50,75,1250);
+        mewTwo.attack(mew);
+        assertEquals(5000 - 480, mew.getHp());
     }
     
     @Test
